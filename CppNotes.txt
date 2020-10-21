@@ -1,3 +1,4 @@
+Best Practices Only:
 1_Basics.cpp
     Brace initialization gives better performance compared to normal initialization.
     \n is better than endl.
@@ -5,3 +6,6 @@
 2_Functions.cpp
     Nested functions are not supported in c++. Error on line 5.
     Note the line no. 23 i.e same as int num = getValueFromUser();
+3_ForwardDec.cpp
+    It is also called as function prototyping or forward declaration.
+    Like in line no. 3, it is best to forward declare it with the parameters and to not do just int add(int, int);
