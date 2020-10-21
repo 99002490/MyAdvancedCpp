@@ -1,0 +1,4 @@
+1_Basics.cpp
+    Brace initialization gives better performance compared to normal initialization.
+    \n is better than endl.
+    Use snake case or camel case for variable names.
