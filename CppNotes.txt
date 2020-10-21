@@ -9,3 +9,6 @@ Best Practices Only:
 3_ForwardDec.cpp
     It is also called as function prototyping or forward declaration.
     Like in line no. 3, it is best to forward declare it with the parameters and to not do just int add(int, int);
+4_BasicsAboutNamespaces.cpp
+    As u can see, there is ambiguity when using namespace std, because compiler doesn't know if it should call the 
+    namespace or the function.
