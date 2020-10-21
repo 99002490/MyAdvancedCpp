@@ -13,8 +13,18 @@ Best Practices Only:
     As u can see, there is ambiguity when using namespace std, because compiler doesn't know if it should call the 
     namespace or the function.
 5_Macro.cpp
-    Macros are resolved before compilation, that's why they're faster.
+    Macros are resolved before compilation, that's why they're faster. Also called preprocessors. #include is a preprocessors
+    and iostream is a header file.
     Three things you've to know in this is #define, #ifdef and #ifndef
     #define is self-explanatory
     #ifdef is basically if it is defined, execute code inside that block.
     #ifndef is basically if it is not defined, execute code inside that block.
+6_HeaderFilesAndHeaderGuards Folder
+    Always include header guards.
+    Do not define variables and functions in header files.
+    Give your header files the same name as the source files they’re associated with (e.g. grades.h is paired with grades.cpp).
+    Do not #include .cpp files.
+    Also, as you can see in those 3 files, thanks to header guards in .h file and even if you #include "square.h"
+    in the other two files, it doesn't get included more than once.
+    Anyway #include "square.h" in those two .cpp files are for those files to access the functions.
+    To run it do, g++ main.cpp square.cpp (i.e add all the .cpp files)
