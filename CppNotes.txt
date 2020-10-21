@@ -28,3 +28,8 @@ Best Practices Only:
     in the other two files, it doesn't get included more than once.
     Anyway #include "square.h" in those two .cpp files are for those files to access the functions.
     To run it do, g++ main.cpp square.cpp (i.e add all the .cpp files)
+7_ConstAndConstExp.cpp
+    const datatype variable_name is the syntax for best practice.(line 4)
+    From line 5 we can see that const variable has to be declared and initialized, otherwise error.
+    We usually, make function parameters as const, obviously this doesn't makes sense when it is pass by value,
+    because in pass by value a copy is passed, so even if you change the value, it doesn't matter.
