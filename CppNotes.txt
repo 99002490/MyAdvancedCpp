@@ -3,4 +3,5 @@
     \n is better than endl.
     Use snake case or camel case for variable names.
 2_Functions.cpp
-    Nested functions are not supported in c++
+    Nested functions are not supported in c++. Error on line 5.
+    Note the line no. 23 i.e same as int num = getValueFromUser();
