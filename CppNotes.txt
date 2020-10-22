@@ -49,3 +49,5 @@ Best Practices Only:
     Auto is also called type reference.
     Best practice is to not use auto for function return type
     Best to do it like line no.4
+10_StaticCast.cpp
+    static_cast needs the datatype it needs to convert to.
