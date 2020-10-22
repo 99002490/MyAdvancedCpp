@@ -51,3 +51,8 @@ Best Practices Only:
     Best to do it like line no.4
 10_StaticCast.cpp
     static_cast needs the datatype it needs to convert to.
+11_AnonymousAndInlineNamespace.cpp
+    Anonymous namespaces are also called unnamed namespace.
+    The Anonymous namespace declared in that file is available only in that file.
+    You would create an inline namespace for the same purpose.
+    
