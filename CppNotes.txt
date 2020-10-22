@@ -33,3 +33,6 @@ Best Practices Only:
     From line 5 we can see that const variable has to be declared and initialized, otherwise error.
     We usually, make function parameters as const, obviously this doesn't makes sense when it is pass by value,
     because in pass by value a copy is passed, so even if you change the value, it doesn't matter.
+    const vs constexpr is, const should be declared if the variable doesn't change during run time.
+    constexpr should be declared if the variable doesn't change during compile time.
+    Using constexp over macros is a best practice because, debugger can't find a macro, but it can find a constexp.
