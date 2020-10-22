@@ -36,6 +36,7 @@ Best Practices Only:
     const vs constexpr is, const should be declared if the variable doesn't change during run time.
     constexpr should be declared if the variable doesn't change during compile time.
     Using constexp over macros is a best practice because, debugger can't find a macro, but it can find a constexp.
+    constexpr can't be forward declared.
 8_MoreAboutNamespace.cpp
     Namespaces are used to avoid naming collisions.
     Types:user-defined and global.
@@ -44,3 +45,7 @@ Best Practices Only:
     Namespace aliasing example:   namespace boo = foo::goo;(goo is a namespace inside foo)
     Use namespaces when you are distributing code also, as you may or may not have followed good conventions in your
     code, so that might cause conflicts with other functions.
+9_Auto.cpp
+    Auto is also called type reference.
+    Best practice is to not use auto for function return type
+    Best to do it like line no.4
