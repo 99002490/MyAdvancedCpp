@@ -36,3 +36,11 @@ Best Practices Only:
     const vs constexpr is, const should be declared if the variable doesn't change during run time.
     constexpr should be declared if the variable doesn't change during compile time.
     Using constexp over macros is a best practice because, debugger can't find a macro, but it can find a constexp.
+8_MoreAboutNamespace.cpp
+    Namespaces are used to avoid naming collisions.
+    Types:user-defined and global.
+    global namespace are those that are provided by the compiler like std
+    user-defined are the ones defined by user like goo and foo.
+    Namespace aliasing example:   namespace boo = foo::goo;(goo is a namespace inside foo)
+    Use namespaces when you are distributing code also, as you may or may not have followed good conventions in your
+    code, so that might cause conflicts with other functions.
