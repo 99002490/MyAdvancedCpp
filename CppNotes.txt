@@ -61,3 +61,5 @@ Best Practices Only:
     error.
     cin is useless when the string contains whitespaces, it only reads until space.
     use getline instead.
+13_Enum.cpp
+    enums are used for code readability.
