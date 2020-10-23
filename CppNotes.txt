@@ -63,3 +63,8 @@ Best Practices Only:
     use getline instead.
 13_Enum.cpp
     enums are used for code readability.
+    The problem with enums is that variables inside the enums are visible to the global scope.(check the commented code)
+    Use enum class for this problem.
+    enums can be declared either inside the main or outside it doesn't matter.
+14_EnumClass.cpp
+    They're also called scoped enums as the variables inside enum are local to that specific enum.
