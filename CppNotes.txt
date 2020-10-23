@@ -55,4 +55,9 @@ Best Practices Only:
     Anonymous namespaces are also called unnamed namespace.
     The Anonymous namespace declared in that file is available only in that file.
     You would create an inline namespace for the same purpose.
-    
+12_Strings.cpp
+    line no.5 gives error for some reason.
+    only while declaration and initialization brace initialization seems to be fine, while re-initialization it is giving
+    error.
+    cin is useless when the string contains whitespaces, it only reads until space.
+    use getline instead.
