@@ -123,4 +123,13 @@ Best Practices Only:
     4) They can be used to pass a function as a parameter to another function.
     5) They can be used to achieve polymorphism when dealing with inheritance.
     6) They can be used to have one struct/class point at another struct/class, to form a chain. This is useful in some more advanced data structures, such as linked lists and trees.
-
+17_NullPointers.cpp
+    Just like normal variables, pointers are not initialized when they are instantiated. Unless a value is assigned, a pointer will point to some garbage address by default.
+    Besides memory addresses, there is one additional value that a pointer can hold: a null value. A null value is a special value that means the pointer is not pointing at anything. 
+    A pointer holding a null value is called a null pointer.
+    Initialize your pointers to a null value if you’re not giving them another value.
+    So, what I think is we can't dereference a null pointer, because null pointer has no address.
+    Because NULL is a preprocessor macro with an implementation defined value, avoid using NULL.
+    Don't use NULL or 0, instead C++11 has nullptr. Null generally has ambiguity while calling the function, nullptr is more secure.
+    Null pointers is not of any type, but converts to any pointer type.
+    int *ptr { nullptr }; // note: ptr is still an integer pointer, just set to a null value
