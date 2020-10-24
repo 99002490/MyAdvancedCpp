@@ -106,4 +106,21 @@ Best Practices Only:
     }
     8    //length of the array.
     2    //length of the pointer.
+16_Pointers.cpp
+    A pointer holds the address of the variable it points to.
+    When declaring a pointer variable, put the asterisk next to the variable name.
+    When declaring a function, put the asterisk of a pointer return value next to the type.
+    Just like normal variables, pointers are not initialized when declared. If not initialized with a value, they will contain garbage.
+    The type of the pointer has to match the type of the variable being pointed to(line no.17-20)
+    ptr is the same as &value
+    *ptr is treated the same as value
+    Basically to back what I just said rn, you can see in line no.39 to point the pointer to a different variable there is no *.
+    But, when you wanna change the value it holds, you need *.(line no.45)
+    Use of pointers:
+    1) Arrays are implemented using pointers. Pointers can be used to iterate through an array (as an alternative to array indices) 
+    2) They are the only way you can dynamically allocate memory in C++  This is by far the most common use case for pointers.
+    3) They can be used to pass a large amount of data to a function in a way that doesn’t involve copying the data(which is inefficient).
+    4) They can be used to pass a function as a parameter to another function.
+    5) They can be used to achieve polymorphism when dealing with inheritance.
+    6) They can be used to have one struct/class point at another struct/class, to form a chain. This is useful in some more advanced data structures, such as linked lists and trees.
 
