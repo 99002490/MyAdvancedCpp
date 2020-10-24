@@ -142,3 +142,7 @@ Best Practices Only:
     In this case, I'm passing a string as a const ref because, when we pass strings to a function, a copy is created.
     We can avoid that copying by declaring it as a a const ref.
     Also, note that you only declare the parameter as a const, when you wouldn't wanna to change that value or make it read only, say just printing.
+21_ForEachLoop.cpp
+    As you can see, int[] is a fundamental datatype. So a ref is not required.
+    In the next code which is commented, string is a non-fundamental datatype, so use reference to avoid creating a copy each time.
+    Also, we aren't changing the values anywhere, so it's fine if it's const.
