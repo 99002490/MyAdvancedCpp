@@ -68,3 +68,42 @@ Best Practices Only:
     enums can be declared either inside the main or outside it doesn't matter.
 14_EnumClass.cpp
     They're also called scoped enums as the variables inside enum are local to that specific enum.
+15_Arrays.cpp
+    int array[5]{ 0, 1, 2, 3, 4 }; // explicitly define the length of the array
+    int array[]{ 0, 1, 2, 3, 4 }; // let the initializer list set length of the array
+    Variables passed to a function are actually pass by value and the arrays passed to a function are actually pass
+    by pointer by default for some reason.
+    Also, for the same reason, getting the length of the array inside the main function is fine, but trying to get the 
+    size of an array passed to a function, actually returns the size of a pointer.
+
+    If you don't wanna change the array parameters, use const.
+    // even though prime is the actual array, within this function it should be treated as a constant
+    void passArray(const int prime[5])
+    {
+        // so each of these lines will cause a compile error!
+        prime[0] = 11;
+        prime[1] = 7;
+        prime[2] = 5;
+        prime[3] = 3;
+        prime[4] = 2;
+    }
+
+    Finding length of array.
+    #include <iostream>
+ 
+    void printSize(int array[])
+    {
+        std::cout << sizeof(array) / sizeof(array[0]) << '\n';
+    }
+    
+    int main()
+    {
+        int array[]{ 1, 1, 2, 3, 5, 8, 13, 21 };
+        std::cout << sizeof(array) / sizeof(array[0]) << '\n';
+        printSize(array);
+    
+        return 0;
+    }
+    8    //length of the array.
+    2    //length of the pointer.
+
