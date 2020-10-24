@@ -133,3 +133,12 @@ Best Practices Only:
     Don't use NULL or 0, instead C++11 has nullptr. Null generally has ambiguity while calling the function, nullptr is more secure.
     Null pointers is not of any type, but converts to any pointer type.
     int *ptr { nullptr }; // note: ptr is still an integer pointer, just set to a null value
+20_RulesForRefernces.cpp
+    void changeN(const std::string &ref)
+    {
+        ref = "hello"; // not allowed, ref is const
+    }
+    References are faster because, when you make it a reference, memory doesn't have to be allocated.
+    In this case, I'm passing a string as a const ref because, when we pass strings to a function, a copy is created.
+    We can avoid that copying by declaring it as a a const ref.
+    Also, note that you only declare the parameter as a const, when you wouldn't wanna to change that value or make it read only, say just printing.
