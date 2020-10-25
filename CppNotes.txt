@@ -156,4 +156,13 @@ Best Practices Only:
         myArray.size()
         myArray.sort(myArray.begin(), myArray.end())
     std::array is just as fast as normal array. One drawback is that we need to specific the array size in the beginning itself.
+23_std::vector.cpp
+    std::array is good for a fixed sized, but for dynamic sized arrays, vector is better because.
+    Vector automatically allocates and deallocates the memory, so dont have to worry about memory leaks and stuff.
+    Vector also provides resizing option.
+    Operations:
+        myVec.at(index)    returns an exception if you go beyond the bounds.
+        myVec.size()
+        myVec.sort(myArray.begin(), myArray.end())
+        myVec.resize(5)
 
