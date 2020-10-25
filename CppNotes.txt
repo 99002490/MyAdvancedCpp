@@ -146,3 +146,14 @@ Best Practices Only:
     As you can see, int[] is a fundamental datatype. So a ref is not required.
     In the next code which is commented, string is a non-fundamental datatype, so use reference to avoid creating a copy each time.
     Also, we aren't changing the values anywhere, so it's fine if it's const.
+22_std::array.cpp
+    As you know from earlier normal arrays have many problems like we are unable to find the length when passed to a function also with dynamic arrays we have to 
+    be careful while resizing.
+    Again, std::array is in the array header file, so it is a non-fundamental type. So, while passing it to function pass it as a const ref or a ref.
+    Also, if you're just printing also, just making it const ref is fine.
+    Operations:
+        myArray.at(index)    returns an exception if you go beyond the bounds.
+        myArray.size()
+        myArray.sort(myArray.begin(), myArray.end())
+    std::array is just as fast as normal array. One drawback is that we need to specific the array size in the beginning itself.
+
