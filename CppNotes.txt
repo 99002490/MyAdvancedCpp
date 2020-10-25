@@ -175,4 +175,7 @@ Best Practices Only:
 25_ReturnByPointer.cpp
     As you see in the first example when you try returning the address of a local variable, you'll get a dangling pointer.
     You could also run into a dangling reference if you do the same using a reference.
+26_AssertAndStaticAssert.cpp
+    assert evaluates at run-time. It is basically a run-time kinda exception handling.
+    Next is static_assert which you'd have probably guessed by now, is a kind of compile time exception handling.
 
