@@ -165,4 +165,14 @@ Best Practices Only:
         myVec.size()
         myVec.sort(myArray.begin(), myArray.end())
         myVec.resize(5)
+24_MoreAboutRef.cpp
+    Sometimes modifying the variables without creating a copy is what is required. But, as you can imagine, sometimes it is dangerous.
+    So, if you don't want to pass by value(which would create a copy of the variables) and not modify the params, just use a const ref.
+    l values are variables.
+    r values are results of expressions.
+    Non-const references cannot bind to r-values. A function with a non-const reference parameter cannot be called with literals or temporaries.
+    Use ref if you're passing a class.
+25_ReturnByPointer.cpp
+    As you see in the first example when you try returning the address of a local variable, you'll get a dangling pointer.
+    You could also run into a dangling reference if you do the same using a reference.
 
