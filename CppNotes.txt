@@ -183,4 +183,9 @@ Best Practices Only:
     class will have member functions and data.
     Start a class with a capital letter.
     Member variables-private and Member functions-public.
+28_ConstructorBasics.cpp
+    You can see initializer list is used for parameterized constructor.
+    As you can see you can initialize const variables and arrays with this initialization.
+    delegating constructors to reduce code.
+    A few additional notes about delegating constructors. First, a constructor that delegates to another constructor is not allowed to do any member initialization itself. So       your constructors can delegate or initialize, but not both.
 
