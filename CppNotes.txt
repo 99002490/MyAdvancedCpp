@@ -188,4 +188,8 @@ Best Practices Only:
     As you can see you can initialize const variables and arrays with this initialization.
     delegating constructors to reduce code.
     A few additional notes about delegating constructors. First, a constructor that delegates to another constructor is not allowed to do any member initialization itself. So       your constructors can delegate or initialize, but not both.
+29_CopyConstructor.cpp
+    In a copy constructor, you pass the Rectangle as a ref, because obviously you don't want to create another rectangle, you'd wanna use the existing rectangle to make a copy.
+    So, in that example, you're basically saying, the existing rectangle's i.e r1's width and height is the same for the new rectangle r2. 
+    
 
