@@ -178,4 +178,9 @@ Best Practices Only:
 26_AssertAndStaticAssert.cpp
     assert evaluates at run-time. It is basically a run-time kinda exception handling.
     Next is static_assert which you'd have probably guessed by now, is a kind of compile time exception handling.
+27_BasicsAboutOop.cpp
+    Just like structs declaration doesn't allocate any memory, same as in class.
+    class will have member functions and data.
+    Start a class with a capital letter.
+    Member variables-private and Member functions-public.
 
